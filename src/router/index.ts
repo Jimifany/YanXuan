@@ -27,9 +27,9 @@ export default new Router({
       name: "mine",
       component:Mine
     },{
-      path: "/home",
-      name: "home",
-      component:Home
+     name: '首页',
+     path:'/home',
+     component: Home
     },{
       path: "/special",
       name: "special",
@@ -41,8 +41,8 @@ export default new Router({
       component:Classify
     },
     {
-      redirect:'/',
-      path:'/login'
+      redirect:'/login',
+      path:'/'
     }
   ]
 });
