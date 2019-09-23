@@ -1,12 +1,17 @@
 <template>
-    <div className="brandBox">
-        <div className="brandTitle">品牌制造商直供</div>
-        <div className="brandWrap"></div>
+    <div class="content">
+       <div class="tabPageContent">
+           <router-view></router-view>
+       </div>
+       <Tab/>
     </div>
 </template>
 <script>
+import Tab from '../../components/tab/index'
 export default {
-    
+   components: {
+       Tab
+   }
 }
 </script>
 <style>

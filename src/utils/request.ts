@@ -17,12 +17,12 @@ instance.interceptors.request.use( (config) =>{
 instance.interceptors.response.use( (response) =>{
     // Do something with response data
     if(response.status!==200){
-      message.error(response.statusText);
+     
     }
     return response.data;
   },  (error) =>{
     if (error.response.status && error.response.status !== 200){
-      message.error(error.response.statusText);
+      
     }else{
       // message.error(error.response);
     }

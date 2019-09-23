@@ -8,6 +8,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    list-style: none;
+    text-decoration: none;
   }
   html,body,#app{
     width: 100%;

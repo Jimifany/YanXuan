@@ -19,7 +19,7 @@
   </div>
 </template>
 <script>
-import {login} from '../../server/index'
+import {mapState,mapActions} from 'vuex'
 export default {
      name:'login',
     data() {
@@ -35,10 +35,10 @@ export default {
           password: this.password
         }
         console.log(params)
-        login(params).then(res=>{
-          console.log(res)
-          this.$router.history.push('/home')
-        })
+        this.$store.dispatch('login/getLogin',
+          params
+        )
+        this.$router.history.push('/home')
       }
     },
 }
