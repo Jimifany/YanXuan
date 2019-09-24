@@ -5,7 +5,10 @@ export default {
         Banner:[],
         brandList:[],
         channel:[],
-        newGoodsList:[]
+        newGoodsList:[],
+        hotGoodsList:[],
+        topicList:[],
+        categoryList:[],
     },
     mutations:{
         getBanner(state:{Banner:any}, payloay:object) {
@@ -20,7 +23,16 @@ export default {
         },
         getnewGoodsList(state:any, payloay:object) {
             state.newGoodsList = payloay
-        }
+        },
+        gethotGoodsList(state:any, payloay:object) {
+            state.hotGoodsList = payloay
+        },
+        gettopicList(state:any,payloay:object){
+            state.topicList=payloay
+        },
+        getcategoryList(state:any,payloay:object){
+            state.categoryList=payloay
+        },
     },
     actions:{
         async getHome(context:any,payload:object){
@@ -37,6 +49,15 @@ export default {
                 });
                 home().then(res=>{
                     context.commit('getnewGoodsList',res.data.newGoodsList)
+                });
+                home().then(res=>{
+                    context.commit('gethotGoodsList',res.data.hotGoodsList)
+                });
+                home().then(res=>{
+                    context.commit('gettopicList',res.data.topicList)
+                });
+                home().then(res=>{
+                    context.commit('getcategoryList',res.data.categoryList)
                 });
                 reslove()
             })
