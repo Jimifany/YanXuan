@@ -1,24 +1,24 @@
 <template>
   <div class="nav">
     <router-link to="/page" class="link linknav">
-      <li><i class="el-icon-s-home"></i></li>
-      <li>首页</li>
+      <span class="el-icon-s-home"></span>
+      <span>首页</span>
     </router-link>
     <router-link to="/special" class="link linknav">
-      <li><i class="el-icon-copy-document"></i></li>
-      <li>专题</li>
+      <span class="el-icon-copy-document"></span>
+      <span>专题</span>
     </router-link>
     <router-link to="/classify" class="link linknav">
-      <li><i class="el-icon-menu"></i></li>
-      <li>分类</li>
+      <span class="el-icon-menu"></span>
+      <span>分类</span>
     </router-link>
     <router-link to="/cart" class="link linknav">
-      <li><i class="el-icon-shopping-cart-1"></i></li>
-      <li>购物车</li>
+      <span class="el-icon-shopping-cart-1"></span>
+      <span>购物车</span>
     </router-link>
     <router-link to="/mine" class="link linknav">
-      <li><i class="el-icon-user"></i></li>
-      <li>我的</li>
+      <span class="el-icon-user"></span>
+      <span>我的</span>
     </router-link>
   </div>
 </template>
