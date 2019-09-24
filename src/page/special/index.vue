@@ -15,17 +15,13 @@ import { mapState, mapActions } from "vuex";
 export default {
   name: "special",
   computed: {
-    ...mapState(["specialList"])
-  },
-  created() {
-    this.$store.dispatch("getspecialListFn");
+    ...mapState('special',["specialList"])
   },
   mounted() {
-    // console.log(this.list);
-    // console.log(this.$store.state);
-    //  this.list=this.$store.state.specialList;
-    // console.log(this.list)
-    // this.getspecialListFn()
+    this.getspecialListFn()
+  },
+  methods: {
+     ...mapActions('special',['getspecialListFn'])
   }
 };
 </script>

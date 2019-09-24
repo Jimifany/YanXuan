@@ -2,7 +2,7 @@
   <div class="wrap">
     <div class="focus">
       <swiper class="banner-list" :options="swiperOption" ref="bannerlist">
-        <swiperSlide v-for="item in list" :key="item.id">
+        <swiperSlide v-for="item in banner" :key="item.id">
           <img :src="item.image_url" alt class="img" />
         </swiperSlide>
         <div class="swiper-pagination" slot="pagination"></div>
@@ -90,13 +90,6 @@ export default {
   name: "home",
   data() {
     return {
-      list: [],
-      channel: [],
-      brandList: [],
-      newGoodsList: [],
-      hotGoodsList: [],
-      topicList: [],
-      categoryList: [],
       swiperOption: {
         pagination: {
           el: ".swiper-pagination"
@@ -104,8 +97,9 @@ export default {
       }
     };
   },
-  computed: mapState([
-    "Banner",
+  computed: {
+   ...mapState('home',[
+    "banner",
     "brandList",
     "channel",
     "hotGoodsList",
@@ -113,17 +107,14 @@ export default {
     "topicList",
     "categoryList"
   ]),
-  mounted() {
-    this.$store.dispatch("home/getHome");
-    this.list = this.$store.state.home.Banner;
-    this.channel = this.$store.state.home.channel;
-    this.brandList = this.$store.state.home.brandList;
-    this.newGoodsList = this.$store.state.home.newGoodsList;
-    this.hotGoodsList = this.$store.state.home.hotGoodsList;
-    this.topicList = this.$store.state.home.topicList;
-    this.categoryList = this.$store.state.home.categoryList;
   },
-  methods: {},
+  mounted() {
+   this.getHome()
+   
+  },
+  methods: {
+     ...mapActions('home',['getHome'])
+  },
   components: {
     swiper,
     swiperSlide

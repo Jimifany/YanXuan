@@ -7,3 +7,7 @@ export let login = (params:any)=>{
 export let home = ()=>{
     return request.get('/',)
 }
+ //专题接口
+ export let special = (params:object) => {
+     return request.get('/topic/list',{params})
+ }
