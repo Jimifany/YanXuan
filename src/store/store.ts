@@ -9,19 +9,19 @@ export default new Vuex.Store({
         specialList: [],
     },
     mutations: {
-        getspecialList(state:any, payload: object) {
+        getspecialList(state: any, payload: object) {
             // console.log(payload)
             state.specialList = payload;
             console.log(state.specialList)
         }
     },
     actions: {
-        async getspecialListFn({commit},params: any) {
-             await special(params).then(res=>{
-                 console.log(res)
-commit('getspecialList',res.data.data)
+        async getspecialListFn({ commit }, params: any) {
+            await special(params).then(res => {
+                console.log(res)
+                commit('getspecialList', res.data.data)
             })
-                // console.log(result.data.data)
+            // console.log(result.data.data)
         }
     }
 });
