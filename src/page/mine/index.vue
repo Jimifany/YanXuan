@@ -16,7 +16,43 @@
           <div>我的收藏</div>
         </div>
         <div class="Item">
+          <i class="icon iconfont icon-zixuntianchong"></i>
+          <div>我的收藏</div>
+        </div>
+        <div class="Item">
           <i class="icon iconfont icon-7tian"></i>
+          <div>我的收藏</div>
+        </div>
+         <div class="Item">
+          <i class="icon iconfont icon-7tian"></i>
+          <div>我的收藏</div>
+        </div>
+        <div class="Item">
+          <i class="icon iconfont icon-zixuntianchong"></i>
+          <div>我的收藏</div>
+        </div>
+        <div class="Item">
+          <i class="icon iconfont icon-7tian"></i>
+          <div>我的收藏</div>
+        </div>
+         <div class="Item">
+          <i class="icon iconfont icon-7tian"></i>
+          <div>我的收藏</div>
+        </div>
+        <div class="Item">
+          <i class="icon iconfont icon-zixuntianchong"></i>
+          <div>我的收藏</div>
+        </div>
+        <div class="Item">
+          <i class="icon iconfont icon-7tian"></i>
+          <div>我的收藏</div>
+        </div>
+         <div class="Item">
+          <i class="icon iconfont icon-7tian"></i>
+          <div>我的收藏</div>
+        </div>
+        <div class="Item">
+          <i class="icon iconfont icon-zixuntianchong"></i>
           <div>我的收藏</div>
         </div>
         <div class="Item">
@@ -24,6 +60,9 @@
           <div>我的收藏</div>
         </div>
       </div>
+    <div class="loginOut">
+退出登录
+    </div>
     </div>
   </div>
 </template>
