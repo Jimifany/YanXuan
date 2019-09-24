@@ -12,12 +12,16 @@ export default new Vuex.Store({
         getspecialList(state:any, payload: object) {
             // console.log(payload)
             state.specialList = payload;
+            console.log(state.specialList)
         }
     },
     actions: {
         async getspecialListFn({commit},params: any) {
-            let result = await special(params)
-                console.log(result.data.data)
+             await special(params).then(res=>{
+                 console.log(res)
+commit('getspecialList',res.data.data)
+            })
+                // console.log(result.data.data)
         }
     }
 });

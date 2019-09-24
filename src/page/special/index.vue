@@ -1,15 +1,30 @@
 <template>
-  <div><div ><dt></dt></div></div>
+  <div>
+    <!-- <div v-for="(item,index) in specialList" :key="index">
+      {{item.id}}
+    </div> -->
+    <div class="tabPageContent">
+<a href="" v-for="(item,index) in specialList" :key="index">
+  <img :src="item.scene_pic_url">
+  <div class="topicItemTitle">
+{{item.title}}
+  </div>
+  <div class="topicItemSubtitle">
+{{item.subtitle}}
+  </div>
+  <div class="topicItemPrice">
+{{item.price_info}}元起
+  </div>
+</a>
+
+    </div>
+    <!-- 专题 -->
+  </div>
 </template>
 <script>
 import { mapState, mapActions } from "vuex";
 export default {
   name: "special",
-  data(){
-return{
-    // Special:[]
-}
-  },
   computed: {
     ...mapState(["specialList"])
   },
@@ -18,8 +33,11 @@ return{
   },
   mounted(){
     //   this.Special=
-     console.log(this.$store.state.specialList) ;
-    //   console.log(this.Special)
+    //  console.log();
+    // console.log(this.list);
+    // console.log(this.$store.state);
+    //  this.list=this.$store.state.specialList;
+      // console.log(this.list)
     // this.getspecialListFn()
   }
 };
