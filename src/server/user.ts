@@ -11,3 +11,7 @@ export let home = ()=>{
  export let special = (params:object) => {
      return request.get('/topic/list',{params})
  }
+ //专题详情接口
+ export let specialDetail=(params:object)=>{
+  return request.get('/topic/detail',{params})
+ }

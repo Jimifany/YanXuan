@@ -7,6 +7,7 @@ import Mine from "../page/mine/index.vue";
 import Home from "../page/home/index.vue";
 import Special from "../page/special/index.vue";
 import Classify from "../page/classify/index.vue";
+import SpecialDetail from "../page/specialDetail/index.vue"
 Vue.use(Router);
 
 export default new Router({
@@ -47,8 +48,14 @@ export default new Router({
           path: "/classify",
           name: "classify",
           component: Classify
-        }
+        },
+       
       ]
+    },
+    {
+      path: "/specialDetail/:id",
+      name: "specialDetail",
+      component: SpecialDetail
     },
     {
       redirect: "/login",

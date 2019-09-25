@@ -3,12 +3,14 @@ import Vuex from "vuex";
 import login from './modules/login'
 import home from './modules/home'
 import special from './modules/special'
+import specialDetail from './modules/specialDetail'
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-   modules:{
-    login,
-    home,
-    special
+   modules: {
+      login,
+      home,
+      special,
+      specialDetail
    }
 });
