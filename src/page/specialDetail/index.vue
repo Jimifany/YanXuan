@@ -13,7 +13,6 @@
             <span>精选留言</span>
             <span class="icon iconfont icon-youdaoyunbiji"></span>
           </p>
-          <!-- {{commonList}} -->
           <ul>
             <li v-for="(item,index) in commonList.data" :key="index">
               <p class="Items">
@@ -22,14 +21,26 @@
               </p>
               <p class="Text">{{item.content}}</p>
             </li>
-             <!-- <li>
-              <p class="Items">
-                <span>匿名评论</span>
-                <span>243224534544645</span>
-              </p>
-              <p class="Text">很不错呦</p>
-            </li> -->
           </ul>
+        </div>
+        <div class="relateTopic">
+          <div class="relHeader">推荐主题</div>
+          <div class="relateTopicItem">
+            <img src="https://yanxuan.nosdn.127.net/14943267735961674.jpg" alt />
+            <div class="tit">关爱他成长的每一个足迹</div>
+          </div>
+           <div class="relateTopicItem">
+            <img src="https://yanxuan.nosdn.127.net/14942996754171334.jpg" alt />
+            <div class="tit">关爱他成长的每一个足迹</div>
+          </div>
+           <div class="relateTopicItem">
+            <img src="https://yanxuan.nosdn.127.net/14939843143621089.jpg" alt />
+            <div class="tit">关爱他成长的每一个足迹</div>
+          </div>
+           <div class="relateTopicItem">
+            <img src="https://yanxuan.nosdn.127.net/14938873919030679.jpg" alt />
+            <div class="tit">关爱他成长的每一个足迹</div>
+          </div>
         </div>
       </div>
     </div>

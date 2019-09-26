@@ -9,7 +9,7 @@ export default {
     mutations: {
         getdetail(state: any, payload: object) {
             state.detailList = payload;
-            // console.log(state.detailList)
+            console.log(state.detailList)
         },
         getCommon(state: any, payload: object) {
             state.commonList = payload;
@@ -20,7 +20,7 @@ export default {
         async getdetailFn({ commit }: any, params: any) {
             // console.log(params)
             await specialDetail(params).then(res => {
-                // console.log(res)
+                console.log(res)
                 commit('getdetail', res.data)
             })
         },
