@@ -7,10 +7,30 @@
         <div class="right"></div>
       </div>
       <div class="DetailBox">
-        <!-- <div class="Pic" v-for="(value,key,index) in detailList" :key="index"> -->
         <div class="IMG" v-html="detailList.content"></div>
-        <!-- </div> -->
-        <!-- <img :src="detailList.item_pic_url" alt=""> -->
+        <div class="com">
+          <p class="board">
+            <span>精选留言</span>
+            <span class="icon iconfont icon-youdaoyunbiji"></span>
+          </p>
+          <!-- {{commonList}} -->
+          <ul>
+            <li v-for="(item,index) in commonList.data" :key="index">
+              <p class="Items">
+                <span>匿名评论</span>
+                <span>{{item.add_time}}</span>
+              </p>
+              <p class="Text">{{item.content}}</p>
+            </li>
+             <!-- <li>
+              <p class="Items">
+                <span>匿名评论</span>
+                <span>243224534544645</span>
+              </p>
+              <p class="Text">很不错呦</p>
+            </li> -->
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -23,13 +43,12 @@ export default {
     return {};
   },
   computed: {
-    ...mapState("specialDetail", ["detailList"])
+    ...mapState("specialDetail", ["detailList", "commonList"])
   },
   methods: {
-    ...mapActions("specialDetail", ["getdetailFn"]),
+    ...mapActions("specialDetail", ["getdetailFn", "getCommonFn"]),
     Back() {
-      console.log(1111);
-     this.$router.go(-1)
+      this.$router.go(-1);
     }
   },
   created() {
@@ -37,6 +56,10 @@ export default {
     console.log(id);
     this.getdetailFn({ id: id });
     console.log(this.$route.query.newId);
+    this.getCommonFn({
+      valueId: id,
+      typeId: 1
+    });
   },
   mounted() {}
 };

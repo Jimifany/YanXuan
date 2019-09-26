@@ -8,7 +8,7 @@ export default {
         getspecialList(state: any, payload: object) {
             // console.log(payload)
             state.specialList = payload;
-            // console.log(state.specialList)
+            console.log(state.specialList)
         }
     },
     actions: {

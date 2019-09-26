@@ -26,9 +26,10 @@ export default {
   methods: {
     ...mapActions("special", ["getspecialListFn"]),
     Todetail(id) {
-      console.log(11111)
-      console.log(id);
+      // console.log(11111)
+      // console.log(id);
       this.$router.push({ path: `/specialDetail/${id}`, query: { newId: id } });
+
     }
   }
 };
