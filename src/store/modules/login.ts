@@ -1,16 +1,13 @@
-import {login} from '../../server'
+import { login } from "../../server";
 export default {
-    namespaced:true,
-    state: {
-    
-    },
-    mutations:{
-
-    },
-    actions:{
-        async getLogin(context:any,payload:object){
-            let result = await login(payload)
-            console.log(result)
-        }
+  namespaced: true,
+  state: {},
+  mutations: {},
+  actions: {
+    async getLogin(context: any, payload: object) {
+      console.log(payload);
+      let result = await login(payload);
+      window.localStorage.setItem("token", result.data.sessionKey);
     }
-}
+  }
+};

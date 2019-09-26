@@ -1,0 +1,149 @@
+.logo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modelProps {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: 999;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transform: translateZ(0.01rem);
+  transform: translateZ(0.01rem);
+}
+
+.document {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  bottom: 0;
+  opacity: .95;
+  padding-bottom: env(safe-area-inset-bottom);
+  height: 2.4rem;
+}
+
+.goodsSizeDo {
+  padding: .2rem .1rem;
+  background: white;
+}
+
+.goodsSizeSetMsg {
+  height: 1rem;
+  display: flex;
+}
+
+.gooodsSizePriceAndSize {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 .05rem;
+  flex: 1 1;
+  height: 100%;
+  font-size: .15rem;
+  text-align: left;
+}
+
+.gooodsSizePriceAndSize div {
+  width: 95%;
+  height: auto;
+  line-height: .3rem;
+}
+
+.gooodsSizePriceAndSize div span {
+  color: red;
+}
+
+.closeModel {
+  width: auto;
+  background: lightcyan;
+  color: red;
+}
+
+.icon {
+  width: .16rem;
+  position: absolute;
+  right: .01rem;
+  top: .01rem;
+  display: inline-block;
+  height: .16rem;
+  font-size: 0.15rem;
+}
+
+.goodsSizeWrap {
+  height: .72rem;
+  display: flex;
+}
+
+.goodsSizeItemName {
+  text-align: left;
+  width: 100%;
+  font-size: .15rem;
+  color: black;
+  padding: .05rem .05rem;
+}
+
+.goodsSizeListWrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.goodsBuyCount {
+  width: 2rem;
+  height: .4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.onePx_border {
+  width: 33%;
+  height: 100%;
+  font-size: .15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .01rem solid #ededed;
+}
+
+.goodsDoWrap {
+  height: .5rem;
+  display: flex;
+  font-size: .15rem;
+  line-height: .5rem;
+}
+
+.goodsDoWrap div:nth-child(1) {
+  background: -webkit-gradient(linear, left top, right top, from(#ff9500), to(#ff5e3a));
+  background: -webkit-linear-gradient(left, #ff9500, #ff5e3a);
+  background: linear-gradient(90deg, #ff9500, #ff5e3a);
+}
+
+.goodsDoWrap div:nth-child(2) {
+  background: -webkit-gradient(linear, left top, right top, from(#1d62f0), to(#19d5fd));
+  background: -webkit-linear-gradient(left, #1d62f0, #19d5fd);
+  background: linear-gradient(90deg, #1d62f0, #19d5fd);
+}
+
+.goodsDoWrap > div {
+  width: 50%;
+  text-align: center;
+  color: white;
+}

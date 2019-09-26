@@ -1,0 +1,339 @@
+.noTabPageContent {
+  min-height: 100%;
+  padding-top: 0.502rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: .5rem;
+  background: white;
+  box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.12), 0 0 0.06rem 0 rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.goodsPage {
+  padding-bottom: .5rem;
+}
+
+.slide {
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+.serviceList {
+  height: .4rem;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceList li {
+  flex: 1 1;
+  color: #666;
+  font-size: .12rem;
+  text-align: center;
+}
+
+.serviceList li span {
+  color: red;
+  margin-right: .076rem;
+  font-size: .15rem;
+}
+
+.goodsMsgWrap {
+  padding: .2rem;
+  background: white;
+}
+
+.goodsNameTitle {
+  font-size: .2rem;
+  text-align: center;
+  padding-bottom: .1rem;
+}
+
+.goodsNameSubTitle {
+  font-size: .15rem;
+  color: #444;
+  text-align: center;
+  padding-bottom: .05rem;
+}
+
+.goodsPriceTitle {
+  font-size: .2rem;
+  color: red;
+  text-align: center;
+  line-height: .5rem;
+}
+
+.goodsComment {
+  margin-top: .1rem;
+  background: white;
+}
+
+.goodsCommentTitle {
+  display: flex;
+  height: .5rem;
+  line-height: .5rem;
+  padding: 0 .2rem;
+  font-size: .15rem;
+}
+
+.goodscount {
+  width: 50%;
+}
+
+.commentItem {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: white;
+  color: gray;
+  padding-bottom: .05rem;
+}
+
+.commentList {
+  background: white;
+  padding: .1rem;
+}
+
+.userInfo {
+  height: .4rem;
+  line-height: .4rem;
+  font-size: .12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userInfo div:nth-child(1) {
+  flex: 1 1;
+  color: black;
+}
+
+.userInfo div:nth-child(2) {
+  width: auto;
+}
+
+.userComment {
+  line-height: .3rem;
+  font-size: .15rem;
+}
+
+.commentPicList {
+  display: flex;
+}
+
+.commentimg {
+  display: block;
+  width: .5rem;
+  height: .5rem;
+  box-sizing: content-box;
+  margin-right: .05rem;
+}
+
+.goodsSize {
+  margin-top: .01rem;
+  height: .5rem;
+  padding: 0 .2rem;
+  border-top: .01rem solid #f4f4f4;
+  font-size: .16rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goodcott {
+  width: 60%;
+}
+
+.goodcot {
+  width: auto;
+  color: red;
+  padding: 0 .1rem;
+  text-align: right;
+}
+
+.goodsAttribute {
+  margin-top: .1rem;
+  padding: .2rem;
+  background: white;
+  border-top: .01rem solid #f4f4f4;
+}
+
+.goodsAttributeLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2196f3;
+  font-size: .15rem;
+  padding: .05rem 0;
+}
+
+.goodsAttributeLine:before {
+  content: '';
+  width: .2rem;
+  height: 0.01rem;
+  background: #2196f3;
+  margin: 0 .1rem;
+}
+
+.goodsAttributeLine:after {
+  content: '';
+  width: .2rem;
+  height: 0.01rem;
+  background: #2196f3;
+  margin: 0 .1rem;
+}
+
+.goodsAttributeItem {
+  display: flex;
+  align-items: center;
+  line-height: .4rem;
+  background: #dcdfe6;
+  margin-top: .05rem;
+  font-size: .15rem;
+}
+
+.attributeContent {
+  flex: 1 1;
+  font-size: .15rem;
+  line-height: .3rem;
+  padding: 0 .05rem;
+}
+
+.attributeLabel {
+  width: 1rem;
+  color: gray;
+  padding: 0 .05rem;
+  font-size: .16rem;
+  text-align: center;
+}
+
+.topicDetailImg {
+  width: 100%;
+}
+
+.goodsAttribute {
+  margin-top: .1rem;
+  padding: .2rem;
+  background: white;
+}
+
+.problemLabel {
+  font-size: .16rem;
+  line-height: .3rem;
+}
+
+.problemLabel span {
+  color: red;
+  margin-right: .05rem;
+}
+
+.problemContent {
+  font-size: .15rem;
+  line-height: .25rem;
+  color: gray;
+}
+
+.goodsList {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goodsItem {
+  width: 50%;
+  background: white;
+  height: auto;
+  padding: .1rem;
+  position: relative;
+}
+
+.goodsItemImg {
+  width: 100%;
+  min-height: 1rem;
+  height: auto;
+}
+
+.goodsItemPrice {
+  text-align: center;
+  font-size: .14rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: red;
+}
+
+.goodsPageDo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: .49rem;
+  background: white;
+  box-shadow: 0 -0.03rem 0.1rem 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.isLike.like {
+  color: gold;
+  border-right: 1px solid ghostwhite;
+  width: 20%;
+  height: 100%;
+  line-height: .49rem;
+  font-size: .3rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.addCart {
+  width: 30%;
+  height: 100%;
+  line-height: .49rem;
+  text-align: center;
+  font-size: .15rem;
+  color: white;
+  background: linear-gradient(90deg, #ff9500, #ff5e3a);
+}
+
+.payGoods {
+  width: 30%;
+  height: 100%;
+  line-height: .49rem;
+  text-align: center;
+  font-size: .15rem;
+  color: white;
+  background: linear-gradient(90deg, #1d62f0, #19d5fd);
+}
+
+.cartNum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2196f3;
+  width: 20%;
+  height: 100%;
+}
+
+.goodsPageDo i {
+  font-size: .22rem;
+  position: relative;
+}
+
+.goodsPageDo i span {
+  position: absolute;
+  font-size: .16rem;
+  right: -.1rem;
+  top: -.05rem;
+  color: red;
+  font-weight: bolder;
+}

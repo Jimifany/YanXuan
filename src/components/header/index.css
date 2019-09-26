@@ -1,0 +1,34 @@
+.searchWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: .4rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0rem;
+}
+
+.searchInput {
+  width: 90%;
+  height: 70%;
+  background: #ededed;
+  border-radius: .05rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .14rem;
+  color: #666;
+}
+
+i span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-weight: normal;
+}

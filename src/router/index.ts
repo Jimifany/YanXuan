@@ -7,6 +7,11 @@ import Mine from "../page/mine/index.vue";
 import Home from "../page/home/index.vue";
 import Special from "../page/special/index.vue";
 import Classify from "../page/classify/index.vue";
+import Search from '../page/goodsSearch/index.vue'
+import Homedetail from '../page/homedetail/index.vue'
+import Cytodetail  from '../page/cytodetail/index.vue'
+import Goodsdetail from '../page/goodsdetail/index.vue'
+import Publicdetail from '../page/publicdetail/index.vue'
 Vue.use(Router);
 
 export default new Router({
@@ -47,8 +52,37 @@ export default new Router({
           path: "/classify",
           name: "classify",
           component: Classify
+        },
+        {
+          redirect: "/page",
+          path: "/"
         }
       ]
+    },
+    {
+      path:'/search',
+      name:'search',
+      component:Search
+    },
+    {
+      path:'/homedetail/:id',
+      name:'homedetail',
+      component:Homedetail
+    },
+    {
+      path:'/cytodetail/:id',
+      name:'cytodetail',
+      component:Cytodetail
+    },
+    {
+      path:'/goodsdetail/:id',
+      name:'goodsdetail',
+      component:Goodsdetail
+    },
+    {
+       path:'/publicdetail/:id',
+       name:'publicdetail',
+       component:Publicdetail
     },
     {
       redirect: "/login",
