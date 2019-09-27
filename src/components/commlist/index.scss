@@ -1,0 +1,57 @@
+.searchMsg{
+    position: fixed;
+    width: 100%;
+    top:.45rem;
+}
+.searchItemWrap{
+    width: 100%;
+    height: auto;
+    margin-top: .1rem;
+    padding: .1rem;
+    background: white;
+    border-bottom: 0.01rem solid #eee;
+}
+.title{
+    width: 100%;
+    height: .30rem;
+    font-size: .14rem;
+    line-height: .30rem;
+}
+.deleted{
+    position: absolute;
+    right: 0.1rem;
+}
+.listWrap{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: .05rem;
+    padding: .1rem;
+    background: white;
+}
+.listItem{
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #dcdfe6;
+    border-color: #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .08rem .12rem;
+    font-size: .14em;
+    border-radius: .04rem;
+    margin: .02rem;
+}

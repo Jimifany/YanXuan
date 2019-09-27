@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="delete" unicode="&#59033;" d="M656 608h144a16 16 0 0 0 16-16v-16a16 16 0 0 0-16-16h-48v-496a16 16 0 0 0-16-16H288a16 16 0 0 0-16 16V560h-48a16 16 0 0 0-16 16v16a16 16 0 0 0 16 16h144v80a16 16 0 0 0 16 16h256a16 16 0 0 0 16-16v-80z m-48 0v48H416v-48h192z m32-48H320v-464h384V560h-64z m-208-112h16a16 16 0 0 0 16-16v-192a16 16 0 0 0-16-16h-16a16 16 0 0 0-16 16V432a16 16 0 0 0 16 16z m144 0h16a16 16 0 0 0 16-16v-192a16 16 0 0 0-16-16h-16a16 16 0 0 0-16 16V432a16 16 0 0 0 16 16z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

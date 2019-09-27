@@ -2,6 +2,7 @@ import axios from 'axios'
 const instance = axios.create({
     baseURL:'http://169.254.18.17:8888',
     timeout:1000,
+    headers: {'x-nideshop-token': window.localStorage.getItem('token')}
 })
 // 请求拦截器
 instance.interceptors.request.use( (config:any) =>{

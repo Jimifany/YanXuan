@@ -24,8 +24,8 @@ export default {
      name:'login',
     data() {
       return {
-        mobile:"",
-        password:''
+        mobile:"15323807318",
+        password:'123456'
       }
     },
     methods: {

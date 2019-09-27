@@ -9,44 +9,60 @@
       </swiper>
     </div>
     <div class="channelWrap">
-      <div class="channelItem" v-for="item in channel" :key="item.id">
+      <router-link
+        :to="`/homedetail/${item.id}`"
+        class="channelItem"
+        v-for="item in channel"
+        :key="item.id"
+      >
         <li>
           <img :src="item.icon_url" alt class="iconurl" />
         </li>
         <li>{{item.name}}</li>
-      </div>
+      </router-link>
     </div>
     <div class="brandBox">
       <div class="brandTitle">品牌制造商直供</div>
       <div class="brandwrap">
-        <div class="brandItem" v-for="item in brandList" :key="item.id">
+        <router-link
+          :to="`/cytodetail/${item.id}`"
+          class="brandItem"
+          v-for="item in brandList"
+          :key="item.id"
+        >
           <div class="brandItemName">{{item.name}}</div>
           <div class="brandItemMinPrice">{{item.floor_price}}元起</div>
           <img :src="item.new_pic_url" alt class="newurl" />
-        </div>
+        </router-link>
       </div>
     </div>
     <div class="newGoodsBox">
       <div class="newGoodsTitle">新品首发</div>
       <div class="newGoodsWrap">
-        <div class="newGoodsItem" v-for="item in newGoodsList" :key="item.id">
+        <router-link
+          :to="`/goodsdetail/${item.id}`"
+          class="newGoodsItem"
+          v-for="item in newGoodsList"
+          :key="item.id"
+        >
           <img :src="item.list_pic_url" alt class="picurl" />
           <div class="newGoodsName">{{item.name}}</div>
           <div class="newGoodsPrice">{{item.retail_price}}</div>
-        </div>
+        </router-link>
       </div>
     </div>
     <div class="hotGoodsBox">
       <div class="hotGoodsTitle">人气推荐</div>
       <div class="hotGoodsWrap">
-        <div class="hotGoodsItem" v-for="item in hotGoodsList" :key="item.id">
+        <router-link
+          :to="`/publicdetail/${item.id}`" class="hotGoodsItem" v-for="item in hotGoodsList" :key="item.id">
           <img :src="item.list_pic_url" alt class="list_picurl" />
           <div class="hotGoodsInfos">
             <div class="hotGoodsName">{{item.name}}</div>
             <div class="hotGoodsInfo">{{item.goods_brief}}</div>
             <div class="hotGoodsPrice">{{item.retail_price}}</div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
     <div class="topGoodsBox">
@@ -67,16 +83,16 @@
     <div class="cateGoryBox">
       <div class="cateGory" v-for="list in categoryList" :key="list.id">
         <div class="cateGoryName">{{list.name}}</div>
-        <div class="cateGoryGoodsWrap" v-for="item in list.goodsList" :key="item.id">
-            <img :src="item.list_pic_url" alt class="goodsItemImg" />
-            <div class="goodsItemName">{{item.name}}</div>
-            <div class="goodsItemPrice">￥{{item.retail_price}}
-          </div>
+        <router-link
+          :to="`/publicdetail/${item.id}`" class="cateGoryGoodsWrap" v-for="item in list.goodsList" :key="item.id">
+          <img :src="item.list_pic_url" alt class="goodsItemImg" />
+          <div class="goodsItemName">{{item.name}}</div>
+          <div class="goodsItemPrice">￥{{item.retail_price}}</div>
+        </router-link>
+        <div class="categoryMoreGoods">
+          <div>更多{{list.name}}好物</div>
+          <img src="../../static/img/icon_go_more.png" class="morePng" />
         </div>
-         <div class="categoryMoreGoods">
-                <div>更多{{list.name}}好物</div>
-                <img src="../../static/img/icon_go_more.png" class="morePng"/>
-          </div>
       </div>
     </div>
   </div>
@@ -98,22 +114,21 @@ export default {
     };
   },
   computed: {
-   ...mapState('home',[
-    "banner",
-    "brandList",
-    "channel",
-    "hotGoodsList",
-    "newGoodsList",
-    "topicList",
-    "categoryList"
-  ]),
+    ...mapState("home", [
+      "banner",
+      "brandList",
+      "channel",
+      "hotGoodsList",
+      "newGoodsList",
+      "topicList",
+      "categoryList"
+    ])
   },
   mounted() {
-   this.getHome()
-   
+    this.getHome();
   },
   methods: {
-     ...mapActions('home',['getHome'])
+    ...mapActions("home", ["getHome"]),
   },
   components: {
     swiper,

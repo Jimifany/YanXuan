@@ -31,6 +31,7 @@
 
 .channelItem {
     flex: 1;
+    color: #000000;
     display: inline-block;
 }
 
@@ -76,6 +77,7 @@
         position: absolute;
         top: .1rem;
         left: .1rem;
+        color: #000;
         font-size: .15rem;
     }
 
@@ -115,6 +117,7 @@
 .newGoodsItem {
     width: 50%;
     height: 2rem;
+    color: #000000;
     display: inline-block;
 
     .picurl {
@@ -166,6 +169,7 @@
     position: relative;
     border-top: 0.01rem solid #c3b0b0;
     padding: 0.1rem 0;
+    color: #000;
     display: flex;
 
     .list_picurl {
@@ -267,6 +271,7 @@
 .cateGoryGoodsWrap {
     width: 50%;
     height: auto;
+    color: #000;
     position: relative;
     background: white;
     border-bottom: 0.01rem solid #f5f5f9;
