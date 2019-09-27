@@ -1,6 +1,6 @@
 import { special } from "../../server"
 export default {
-    namespaced:true,
+    namespaced: true,
     state: {
         specialList: [],
     },
@@ -12,9 +12,9 @@ export default {
         }
     },
     actions: {
-        async getspecialListFn({ commit }:any, params: any) {
+        async getspecialListFn({ commit }: any, params: any) {
             await special(params).then(res => {
-                console.log(res)
+                // console.log(res)
                 commit('getspecialList', res.data.data)
             })
             // console.log(result.data.data)

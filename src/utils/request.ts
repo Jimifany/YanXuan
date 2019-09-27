@@ -1,27 +1,27 @@
 import axios from 'axios'
 const instance = axios.create({
-    baseURL:'http://127.0.0.1:8888',
+    baseURL:'http://169.254.18.17:8888',
     timeout:1000,
     headers: {'x-nideshop-token': window.localStorage.getItem('token')}
 })
 // 请求拦截器
-instance.interceptors.request.use( (config) =>{
+instance.interceptors.request.use( (config:any) =>{
     // Do something before request is sent
     return config;
-  }, (error)=> {
+  }, (error:any)=> {
     // Do something with request error
     return Promise.reject(error);
   }
 );
  
 // 响应拦截器
-instance.interceptors.response.use( (response) =>{
+instance.interceptors.response.use( (response:any) =>{
     // Do something with response data
     if(response.status!==200){
      
     }
     return response.data;
-  },  (error) =>{
+  },  (error:any) =>{
     if (error.response.status && error.response.status !== 200){
       
     }else{

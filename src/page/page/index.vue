@@ -101,7 +101,7 @@
 import { mapState, mapActions } from "vuex";
 import "swiper/css/swiper.css";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
-// import morePng from '../../static/img/icon_go_more.png'
+import morePng from '../../static/img/icon_go_more.png'
 export default {
   name: "home",
   data() {

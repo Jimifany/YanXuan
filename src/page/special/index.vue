@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="tabPageContent">
-      <a href v-for="(item,index) in specialList" :key="index">
+      <a v-for="(item,index) in specialList" :key="index" @click="Todetail(item.id)">
         <img v-lazy="item.scene_pic_url" />
         <div class="topicItemTitle">{{item.title}}</div>
         <div class="topicItemSubtitle">{{item.subtitle}}</div>
@@ -15,13 +15,17 @@ import { mapState, mapActions } from "vuex";
 export default {
   name: "special",
   computed: {
-    ...mapState('special',["specialList"])
+    ...mapState("special", ["specialList"])
   },
   mounted() {
-    this.getspecialListFn()
+    this.getspecialListFn();
   },
   methods: {
-     ...mapActions('special',['getspecialListFn'])
+    ...mapActions("special", ["getspecialListFn"]),
+    Todetail(id) {
+      this.$router.push({ path: `/specialDetail/${id}`, query: { newId: id } });
+
+    }
   }
 };
 </script>

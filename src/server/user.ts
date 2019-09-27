@@ -65,3 +65,11 @@ export let addcart= (params:any)=>{
 export let getcart = (params:any)=>{
     return request.get('/cart/index',{params})
 }
+//专题详情接口
+export let specialDetail = (params: object) => {
+    return request.get('/topic/detail', { params })
+}
+//专题评论
+export let specialCommon = (params: object) => {
+    return request.get('/comment/list', { params })
+}

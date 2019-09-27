@@ -10,6 +10,7 @@ import cytodetail from './modules/cytodetail'
 import goods from './modules/goods'
 import addcart from './modules/addcart'
 import cart from './modules/cart'
+import specialDetail from './modules/specialDetail'
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -23,6 +24,7 @@ export default new Vuex.Store({
     goods,
     cytodetail,
     cart,
-    addcart
+    addcart,
+    specialDetail
    }
 });

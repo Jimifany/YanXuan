@@ -12,6 +12,7 @@ import Homedetail from '../page/homedetail/index.vue'
 import Cytodetail  from '../page/cytodetail/index.vue'
 import Goodsdetail from '../page/goodsdetail/index.vue'
 import Publicdetail from '../page/publicdetail/index.vue'
+import SpecialDetail from "../page/specialDetail/index.vue"
 Vue.use(Router);
 
 export default new Router({
@@ -83,6 +84,11 @@ export default new Router({
        path:'/publicdetail/:id',
        name:'publicdetail',
        component:Publicdetail
+    },
+    {
+      path: "/specialDetail/:id",
+      name: "specialDetail",
+      component: SpecialDetail
     },
     {
       redirect: "/login",
